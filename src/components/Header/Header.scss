@@ -1,0 +1,46 @@
+@use '../../styles/global.scss' as *;
+@use '../../styles/colors.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.header{
+    &__title{
+        text-decoration: none;
+    }
+   &--mobile{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include desktop{
+        display: none;
+    }
+    .icon{
+        color: $Headline;
+    }
+   }
+   &--desktop{
+    display: none;
+    @include desktop{
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .header{
+            &__list{
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+            }
+            &__item{
+                color: $Headline;
+                list-style-type: none;
+                &:hover{
+                    color: $Button;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+   }
+}
