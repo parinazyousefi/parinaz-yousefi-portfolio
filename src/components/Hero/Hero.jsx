@@ -19,7 +19,7 @@ const Hero=()=>{
         <div className="hero__content">
           <h2 className="hero__title">Hello,I'm Parinaz </h2>
           <p className="hero__paragraph">
-            I'm software developer based in Toronto.I studeied Computer
+            I'm full-stack developer based in Toronto.I studeied Computer
             Engineering Technology and worked in IT.After graduation I wanted to
             continue my carear in software development so I enrolled in a
             bootcamp.I will be so happy to collaborate or help you with your

@@ -1,7 +1,24 @@
 @use "../../styles/global.scss" as *;
 @use "../../styles/colors.scss" as *;
 @use "../../styles/mixins.scss" as *;
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
 .hero {
+  animation: sectionAnimation 2s ease-in-out forwards;
+
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -36,6 +53,7 @@
     border-radius: 50%;
     height: 50%;
     width: 50%;
+    animation: float 6s ease-in-out ;
   }
   &__paragraph {
     margin-top: 1rem;
@@ -53,6 +71,7 @@
     &:hover {
       background-color: $Paragraph;
       cursor: pointer;
+    animation: float 6s ease-in-out infinite;
     }
   }
 }
