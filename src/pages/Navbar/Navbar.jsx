@@ -11,7 +11,7 @@ const Navbar = () => {
       <HashLink to='/#projects' className="nav-link">
         <li className="navbar__item">Projects</li>
       </HashLink>
-      <a href={resume}  target = "_blank" className="nav-link">
+      <a href={resume}  target = "_blank" rel="noreferrer"className="nav-link">
       <li className="navbar__item">Resume</li>
       </a>
       <Link to="/">
