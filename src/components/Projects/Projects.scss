@@ -1,0 +1,61 @@
+@use "../../styles/global.scss" as *;
+@use "../../styles/colors.scss" as *;
+@use "../../styles/mixins.scss" as *;
+
+.projects{
+    padding: 1rem;
+    @include desktop{
+        padding: 2rem;
+    }
+}
+.project{
+    &__title{
+        margin-top: 1rem;
+        color: $Button;
+    }
+    &__img{
+        height: auto;
+        width: 100%;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        @include tablet{
+            width: 35%;
+        }
+    }
+    &__info{
+        margin-top: 1rem;
+        color: $Paragraph;
+    }
+    &__feature{
+        list-style-type: none;
+    }
+    &__content{
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+
+    }
+    &__link{
+        color: $Button;
+        margin-top: 2rem;
+    }
+    .tech{
+        &__list{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            margin: 1rem 0;
+
+
+        }
+        &__item{
+            list-style-type: none;
+            background-color: $Button;
+            color: $Button-text;
+            border-radius: 0.5rem;
+            padding: 0.25rem;
+        }
+    }
+}
